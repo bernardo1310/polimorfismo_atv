@@ -1,0 +1,17 @@
+package atv;
+public class Analista extends FolhaPagamento{
+	
+	public Analista() {
+	}
+	
+	public Analista(double sal) {
+		this.setSalario(sal);
+		this.setDesconto(650);
+	}
+
+	public double calculaSalarioLiquido(double Salario, double desconto){
+		double SalarioLiquido = Salario-desconto;
+		return SalarioLiquido+= (SalarioLiquido*0.05);
+	}
+	
+}
